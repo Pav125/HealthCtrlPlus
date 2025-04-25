@@ -1,0 +1,2409 @@
+<html>
+<head>
+<title>TestNG:  EdgeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>EdgeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>31/9/27</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 20 23:04:11 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>153 seconds (153538 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.SignUpTests.data1()'><b>data1</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789@gmail.com, def, def, "Password must be at least 8 characters long and include a number and a special character."</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace656494932", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace656494932'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.HistoryTests.validate_refreshPage_noHistory()'><b>validate_refreshPage_noHistory</b><br>Test class: testCases.HistoryTests</td>
+<td><div><pre>java.lang.AssertionError: did not expect [No history available.] but found [No history available.]
+	at testCases.HistoryTests.validate_refreshPage_noHistory(HistoryTests.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1324784723", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1324784723'><pre>java.lang.AssertionError: did not expect [No history available.] but found [No history available.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failEquals(Assert.java:1594)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+	at org.testng.Assert.assertNotEquals(Assert.java:2217)
+	at org.testng.Assert.assertNotEquals(Assert.java:2239)
+	at testCases.HistoryTests.validate_refreshPage_noHistory(HistoryTests.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.HistoryTests@68567e20</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data1()'><b>data1</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789@gmail.net, abcdefgh, abcdefgh, "Password must be at least 8 characters long and include a number and a special character."</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1291890806", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1291890806'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.KnowYourBMITests.validate_BMI_ValidData()'><b>validate_BMI_ValidData</b><br>Test class: testCases.KnowYourBMITests<br>Parameters: Centimeters (cm), 152.0, Pounds (lb), 155.0, You are Obese(Class I) - 30.43</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class I) - 30.43] but found [You are overweight - 30.43]
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1528968613", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1528968613'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class I) - 30.43] but found [You are overweight - 30.43]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.KnowYourBMITests@2118cddf</td></tr>
+<tr>
+<td title='testCases.KnowYourBMITests.validate_BMI_ValidData()'><b>validate_BMI_ValidData</b><br>Test class: testCases.KnowYourBMITests<br>Parameters: Centimeters (cm), 190.0, Kilograms (kg), 150.0, You are Obese(Class III) - 41.55</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class III) - 41.55] but found [You are overweight - 41.55]
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1590460692", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1590460692'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class III) - 41.55] but found [You are overweight - 41.55]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.KnowYourBMITests@2118cddf</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data1()'><b>data1</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789@gmail.com, abcdefg@, abcdefg@, "Password must be at least 8 characters long and include a number and a special character."</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2062242818", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2062242818'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data1()'><b>data1</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789@gmail.com, def12345, def12345, "Password must be at least 8 characters long and include a number and a special character."</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1063470600", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1063470600'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.SignInTests.validate_NegData_Signin()'><b>validate_NegData_Signin</b><br>Test class: testCases.SignInTests<br>Parameters: abc@gmail.com, 123.0, Password must be at least 8 characters long and include a number and a special character.</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button onclick=&quot;openModal()&quot;&gt;...&lt;/button&gt; is not clickable at point (628, 464). Other element would receive the click: &lt;button onclick=&quot;handleSignIn()&quot;&gt;...&lt;/button&gt;
+  (Session info: MicrosoftEdge=135.0.3179.85)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [cbdd4c565cdabd7c83ad6584d29f3462, clickElement {id=f.EFA4337E4622AADAFFCAA0D5A453A6AD.d.9CBF828375AB1E690538CF0AFB00C08E.e.14}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.85, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64723}, msedge: {msedgedriverVersion: 135.0.3179.85 (578105711aca..., userDataDir: C:\windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64723/devtoo..., se:cdpVersion: 135.0.3179.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (cbdd4c565cdabd7c83ad6584d29f3462)] -&gt; xpath: //button[contains(text(),&apos;Sign In / Sign Up&apos;)]]
+Session ID: cbdd4c565cdabd7c83ad6584d29f3462
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at pageObjects.HomePage.clickSignUporInButton(HomePage.java:71)
+	at testCases.SignInTests.validate_NegData_Signin(SignInTests.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5961639", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5961639'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button onclick=&quot;openModal()&quot;&gt;...&lt;/button&gt; is not clickable at point (628, 464). Other element would receive the click: &lt;button onclick=&quot;handleSignIn()&quot;&gt;...&lt;/button&gt;
+  (Session info: MicrosoftEdge=135.0.3179.85)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [cbdd4c565cdabd7c83ad6584d29f3462, clickElement {id=f.EFA4337E4622AADAFFCAA0D5A453A6AD.d.9CBF828375AB1E690538CF0AFB00C08E.e.14}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.85, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64723}, msedge: {msedgedriverVersion: 135.0.3179.85 (578105711aca..., userDataDir: C:\windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64723/devtoo..., se:cdpVersion: 135.0.3179.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (cbdd4c565cdabd7c83ad6584d29f3462)] -&gt; xpath: //button[contains(text(),&apos;Sign In / Sign Up&apos;)]]
+Session ID: cbdd4c565cdabd7c83ad6584d29f3462
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at pageObjects.HomePage.clickSignUporInButton(HomePage.java:71)
+	at testCases.SignInTests.validate_NegData_Signin(SignInTests.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.SignInTests@57250572</td></tr>
+<tr>
+<td title='testCases.KnowYourBMITests.validate_BMI_ValidData()'><b>validate_BMI_ValidData</b><br>Test class: testCases.KnowYourBMITests<br>Parameters: Centimeters (cm), 168.0, Kilograms (kg), 99.0, You are Obese(Class II) - 35.08</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class II) - 35.08] but found [You are overweight - 35.08]
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1337306552", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1337306552'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class II) - 35.08] but found [You are overweight - 35.08]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.KnowYourBMITests@2118cddf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.KnowYourBMITests.validate_BMI_ValidData()'><b>validate_BMI_ValidData</b><br>Test class: testCases.KnowYourBMITests<br>Parameters: Centimeters (cm), 155.0, Kilograms (kg), 43.0, You are underweight - 17.90</td>
+<td></td>
+<td>0</td>
+<td>testCases.KnowYourBMITests@2118cddf</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data1()'><b>data1</b><br>Test class: testCases.SignUpTests<br>Parameters: abc123@gmail.com, def1234#, def1234#, Sign Up successful!</td>
+<td></td>
+<td>0</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.InformationTests.verify_information_page_URL()'><b>verify_information_page_URL</b><br>Test class: testCases.InformationTests</td>
+<td></td>
+<td>0</td>
+<td>testCases.InformationTests@5609159b</td></tr>
+<tr>
+<td title='testCases.HistoryTests.validate_NoHistory()'><b>validate_NoHistory</b><br>Test class: testCases.HistoryTests</td>
+<td></td>
+<td>0</td>
+<td>testCases.HistoryTests@68567e20</td></tr>
+<tr>
+<td title='testCases.HomeTests.verify_quote_change()'><b>verify_quote_change</b><br>Test class: testCases.HomeTests</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomeTests@6a03bcb1</td></tr>
+<tr>
+<td title='testCases.KnowYourBMITests.validate_BMI_ValidData()'><b>validate_BMI_ValidData</b><br>Test class: testCases.KnowYourBMITests<br>Parameters: Inches (in), 62.0, Pounds (lb), 110.0, You are Healthy - 20.12</td>
+<td></td>
+<td>0</td>
+<td>testCases.KnowYourBMITests@2118cddf</td></tr>
+<tr>
+<td title='testCases.HomeTests.verify_home_page_URL()'><b>verify_home_page_URL</b><br>Test class: testCases.HomeTests</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomeTests@6a03bcb1</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data()'><b>data</b><br>Test class: testCases.SignUpTests<br>Parameters: abc@gmail, def12345#, def12345#, Please use correct email format</td>
+<td></td>
+<td>0</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data()'><b>data</b><br>Test class: testCases.SignUpTests<br>Parameters: abc123@gmail.com, abc1234@, , All fields are required.</td>
+<td></td>
+<td>1</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.KnowYourBMITests.validate_BMI_ValidData()'><b>validate_BMI_ValidData</b><br>Test class: testCases.KnowYourBMITests<br>Parameters: Centimeters (cm), 170.0, Kilograms (kg), 60.0, You are Healthy - 20.76</td>
+<td></td>
+<td>0</td>
+<td>testCases.KnowYourBMITests@2118cddf</td></tr>
+<tr>
+<td title='testCases.HistoryTests.validate_History()'><b>validate_History</b><br>Test class: testCases.HistoryTests<br>Parameters: Centimeters (cm), 168.0, Kilograms (kg), 99.0, 35.08</td>
+<td></td>
+<td>1</td>
+<td>testCases.HistoryTests@68567e20</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data()'><b>data</b><br>Test class: testCases.SignUpTests<br>Parameters: , abc1234@, abc1234@, All fields are required.</td>
+<td></td>
+<td>0</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.SignInTests.validate_PosData_signin()'><b>validate_PosData_signin</b><br>Test class: testCases.SignInTests<br>Parameters: abc@gmail.com, #12abghy, Sign In successful!</td>
+<td></td>
+<td>0</td>
+<td>testCases.SignInTests@57250572</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data1()'><b>data1</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789@gmail.com, def12345#, def12345#, Sign Up successful!</td>
+<td></td>
+<td>0</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.HistoryTests.validate_History()'><b>validate_History</b><br>Test class: testCases.HistoryTests<br>Parameters: Centimeters (cm), 152.0, Pounds (lb), 155.0, 30.43</td>
+<td></td>
+<td>1</td>
+<td>testCases.HistoryTests@68567e20</td></tr>
+<tr>
+<td title='testCases.SignInTests.validateSignUpButtonFunctionality()'><b>validateSignUpButtonFunctionality</b><br>Test class: testCases.SignInTests</td>
+<td></td>
+<td>0</td>
+<td>testCases.SignInTests@57250572</td></tr>
+<tr>
+<td title='testCases.HistoryTests.validate_History()'><b>validate_History</b><br>Test class: testCases.HistoryTests<br>Parameters: Inches (in), 62.0, Pounds (lb), 110.0, 20.12</td>
+<td></td>
+<td>1</td>
+<td>testCases.HistoryTests@68567e20</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data()'><b>data</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789@gmail.com, def12345#, def12345, Passwords do not match.</td>
+<td></td>
+<td>1</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.SignInTests.validate_NegData_Signin()'><b>validate_NegData_Signin</b><br>Test class: testCases.SignInTests<br>Parameters: abcgm.com, #123abcg, Please use correct email format</td>
+<td></td>
+<td>0</td>
+<td>testCases.SignInTests@57250572</td></tr>
+<tr>
+<td title='testCases.TipsTests.verify_tips_page_URL()'><b>verify_tips_page_URL</b><br>Test class: testCases.TipsTests</td>
+<td></td>
+<td>0</td>
+<td>testCases.TipsTests@17a7f733</td></tr>
+<tr>
+<td title='testCases.KnowYourBMITests.testUIElements()'><b>testUIElements</b><br>Test class: testCases.KnowYourBMITests</td>
+<td></td>
+<td>0</td>
+<td>testCases.KnowYourBMITests@2118cddf</td></tr>
+<tr>
+<td title='testCases.HistoryTests.validate_History()'><b>validate_History</b><br>Test class: testCases.HistoryTests<br>Parameters: Centimeters (cm), 155.0, Kilograms (kg), 43.0, 17.9</td>
+<td></td>
+<td>1</td>
+<td>testCases.HistoryTests@68567e20</td></tr>
+<tr>
+<td title='testCases.SignInTests.validateCrossButtonFunctionality()'><b>validateCrossButtonFunctionality</b><br>Test class: testCases.SignInTests</td>
+<td></td>
+<td>0</td>
+<td>testCases.SignInTests@57250572</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data()'><b>data</b><br>Test class: testCases.SignUpTests<br>Parameters: abc123@gmail.com, , abc1234@, All fields are required.</td>
+<td></td>
+<td>0</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.KnowYourBMITests.validate_BMI_ValidData()'><b>validate_BMI_ValidData</b><br>Test class: testCases.KnowYourBMITests<br>Parameters: Inches (in), 65.0, Kilograms (kg), 68.0, You are overweight - 24.95</td>
+<td></td>
+<td>0</td>
+<td>testCases.KnowYourBMITests@2118cddf</td></tr>
+<tr>
+<td title='testCases.HistoryTests.validate_History()'><b>validate_History</b><br>Test class: testCases.HistoryTests<br>Parameters: Centimeters (cm), 190.0, Kilograms (kg), 150.0, 41.55</td>
+<td></td>
+<td>1</td>
+<td>testCases.HistoryTests@68567e20</td></tr>
+<tr>
+<td title='testCases.HistoryTests.validate_History()'><b>validate_History</b><br>Test class: testCases.HistoryTests<br>Parameters: Centimeters (cm), 170.0, Kilograms (kg), 60.0, 20.76</td>
+<td></td>
+<td>1</td>
+<td>testCases.HistoryTests@68567e20</td></tr>
+<tr>
+<td title='testCases.HistoryTests.validate_History()'><b>validate_History</b><br>Test class: testCases.HistoryTests<br>Parameters: Inches (in), 65.0, Kilograms (kg), 68.0, 24.95</td>
+<td></td>
+<td>1</td>
+<td>testCases.HistoryTests@68567e20</td></tr>
+<tr>
+<td title='testCases.KnowYourBMITests.validate_BMI_InvalidData()'><b>validate_BMI_InvalidData</b><br>Test class: testCases.KnowYourBMITests<br>Parameters: Centimeters (cm), -10.0, Kilograms (kg), uh</td>
+<td></td>
+<td>0</td>
+<td>testCases.KnowYourBMITests@2118cddf</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data()'><b>data</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789, def12345#, def12345#, Please use correct email format</td>
+<td></td>
+<td>1</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data()'><b>data</b><br>Test class: testCases.SignUpTests<br>Parameters: abcgmail.com, def12345#, def12345#, Please use correct email format</td>
+<td></td>
+<td>1</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.SignUpTests.data1()'><b>data1</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789@gmail.com, def12345, def12345, "Password must be at least 8 characters long and include a number and a special character."</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace339082934", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace339082934'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.KnowYourBMITests.validate_BMI_ValidData()'><b>validate_BMI_ValidData</b><br>Test class: testCases.KnowYourBMITests<br>Parameters: Centimeters (cm), 168.0, Kilograms (kg), 99.0, You are Obese(Class II) - 35.08</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class II) - 35.08] but found [You are overweight - 35.08]
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1597029619", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1597029619'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class II) - 35.08] but found [You are overweight - 35.08]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.KnowYourBMITests@2118cddf</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data1()'><b>data1</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789@gmail.com, def, def, "Password must be at least 8 characters long and include a number and a special character."</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1232337789", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1232337789'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.KnowYourBMITests.validate_BMI_ValidData()'><b>validate_BMI_ValidData</b><br>Test class: testCases.KnowYourBMITests<br>Parameters: Centimeters (cm), 152.0, Pounds (lb), 155.0, You are Obese(Class I) - 30.43</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class I) - 30.43] but found [You are overweight - 30.43]
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace441427423", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace441427423'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class I) - 30.43] but found [You are overweight - 30.43]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.KnowYourBMITests@2118cddf</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data1()'><b>data1</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789@gmail.com, abcdefg@, abcdefg@, "Password must be at least 8 characters long and include a number and a special character."</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace995953741", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace995953741'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data1()'><b>data1</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789@gmail.net, abcdefgh, abcdefgh, "Password must be at least 8 characters long and include a number and a special character."</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1705255222", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1705255222'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data1()'><b>data1</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789@gmail.com, def12345, def12345, "Password must be at least 8 characters long and include a number and a special character."</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace26408967", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace26408967'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.KnowYourBMITests.validate_BMI_ValidData()'><b>validate_BMI_ValidData</b><br>Test class: testCases.KnowYourBMITests<br>Parameters: Centimeters (cm), 168.0, Kilograms (kg), 99.0, You are Obese(Class II) - 35.08</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class II) - 35.08] but found [You are overweight - 35.08]
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1103725523", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1103725523'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class II) - 35.08] but found [You are overweight - 35.08]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.KnowYourBMITests@2118cddf</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data1()'><b>data1</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789@gmail.com, def, def, "Password must be at least 8 characters long and include a number and a special character."</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1320358893", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1320358893'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.KnowYourBMITests.validate_BMI_ValidData()'><b>validate_BMI_ValidData</b><br>Test class: testCases.KnowYourBMITests<br>Parameters: Centimeters (cm), 168.0, Kilograms (kg), 99.0, You are Obese(Class II) - 35.08</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class II) - 35.08] but found [You are overweight - 35.08]
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1395611278", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1395611278'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class II) - 35.08] but found [You are overweight - 35.08]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.KnowYourBMITests@2118cddf</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data1()'><b>data1</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789@gmail.net, abcdefgh, abcdefgh, "Password must be at least 8 characters long and include a number and a special character."</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace855428308", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace855428308'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data1()'><b>data1</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789@gmail.com, abcdefg@, abcdefg@, "Password must be at least 8 characters long and include a number and a special character."</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1174600239", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1174600239'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.SignInTests.validate_NegData_Signin()'><b>validate_NegData_Signin</b><br>Test class: testCases.SignInTests<br>Parameters: abc@gmail.com, 123.0, Password must be at least 8 characters long and include a number and a special character.</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button onclick=&quot;openModal()&quot;&gt;...&lt;/button&gt; is not clickable at point (628, 464). Other element would receive the click: &lt;button onclick=&quot;handleSignIn()&quot;&gt;...&lt;/button&gt;
+  (Session info: MicrosoftEdge=135.0.3179.85)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [cbdd4c565cdabd7c83ad6584d29f3462, clickElement {id=f.EFA4337E4622AADAFFCAA0D5A453A6AD.d.9CBF828375AB1E690538CF0AFB00C08E.e.14}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.85, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64723}, msedge: {msedgedriverVersion: 135.0.3179.85 (578105711aca..., userDataDir: C:\windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64723/devtoo..., se:cdpVersion: 135.0.3179.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (cbdd4c565cdabd7c83ad6584d29f3462)] -&gt; xpath: //button[contains(text(),&apos;Sign In / Sign Up&apos;)]]
+Session ID: cbdd4c565cdabd7c83ad6584d29f3462
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at pageObjects.HomePage.clickSignUporInButton(HomePage.java:71)
+	at testCases.SignInTests.validate_NegData_Signin(SignInTests.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace470080233", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace470080233'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button onclick=&quot;openModal()&quot;&gt;...&lt;/button&gt; is not clickable at point (628, 464). Other element would receive the click: &lt;button onclick=&quot;handleSignIn()&quot;&gt;...&lt;/button&gt;
+  (Session info: MicrosoftEdge=135.0.3179.85)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [cbdd4c565cdabd7c83ad6584d29f3462, clickElement {id=f.EFA4337E4622AADAFFCAA0D5A453A6AD.d.9CBF828375AB1E690538CF0AFB00C08E.e.14}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.85, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64723}, msedge: {msedgedriverVersion: 135.0.3179.85 (578105711aca..., userDataDir: C:\windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64723/devtoo..., se:cdpVersion: 135.0.3179.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (cbdd4c565cdabd7c83ad6584d29f3462)] -&gt; xpath: //button[contains(text(),&apos;Sign In / Sign Up&apos;)]]
+Session ID: cbdd4c565cdabd7c83ad6584d29f3462
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at pageObjects.HomePage.clickSignUporInButton(HomePage.java:71)
+	at testCases.SignInTests.validate_NegData_Signin(SignInTests.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.SignInTests@57250572</td></tr>
+<tr>
+<td title='testCases.SignInTests.validate_NegData_Signin()'><b>validate_NegData_Signin</b><br>Test class: testCases.SignInTests<br>Parameters: abc@gmail.com, 123.0, Password must be at least 8 characters long and include a number and a special character.</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button onclick=&quot;openModal()&quot;&gt;...&lt;/button&gt; is not clickable at point (628, 464). Other element would receive the click: &lt;button onclick=&quot;handleSignIn()&quot;&gt;...&lt;/button&gt;
+  (Session info: MicrosoftEdge=135.0.3179.85)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [cbdd4c565cdabd7c83ad6584d29f3462, clickElement {id=f.EFA4337E4622AADAFFCAA0D5A453A6AD.d.9CBF828375AB1E690538CF0AFB00C08E.e.14}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.85, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64723}, msedge: {msedgedriverVersion: 135.0.3179.85 (578105711aca..., userDataDir: C:\windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64723/devtoo..., se:cdpVersion: 135.0.3179.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (cbdd4c565cdabd7c83ad6584d29f3462)] -&gt; xpath: //button[contains(text(),&apos;Sign In / Sign Up&apos;)]]
+Session ID: cbdd4c565cdabd7c83ad6584d29f3462
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at pageObjects.HomePage.clickSignUporInButton(HomePage.java:71)
+	at testCases.SignInTests.validate_NegData_Signin(SignInTests.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace330068609", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace330068609'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button onclick=&quot;openModal()&quot;&gt;...&lt;/button&gt; is not clickable at point (628, 464). Other element would receive the click: &lt;button onclick=&quot;handleSignIn()&quot;&gt;...&lt;/button&gt;
+  (Session info: MicrosoftEdge=135.0.3179.85)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [cbdd4c565cdabd7c83ad6584d29f3462, clickElement {id=f.EFA4337E4622AADAFFCAA0D5A453A6AD.d.9CBF828375AB1E690538CF0AFB00C08E.e.14}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.85, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64723}, msedge: {msedgedriverVersion: 135.0.3179.85 (578105711aca..., userDataDir: C:\windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64723/devtoo..., se:cdpVersion: 135.0.3179.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (cbdd4c565cdabd7c83ad6584d29f3462)] -&gt; xpath: //button[contains(text(),&apos;Sign In / Sign Up&apos;)]]
+Session ID: cbdd4c565cdabd7c83ad6584d29f3462
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at pageObjects.HomePage.clickSignUporInButton(HomePage.java:71)
+	at testCases.SignInTests.validate_NegData_Signin(SignInTests.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.SignInTests@57250572</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data1()'><b>data1</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789@gmail.com, abcdefg@, abcdefg@, "Password must be at least 8 characters long and include a number and a special character."</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1176100982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1176100982'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.KnowYourBMITests.validate_BMI_ValidData()'><b>validate_BMI_ValidData</b><br>Test class: testCases.KnowYourBMITests<br>Parameters: Centimeters (cm), 152.0, Pounds (lb), 155.0, You are Obese(Class I) - 30.43</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class I) - 30.43] but found [You are overweight - 30.43]
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1301254527", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1301254527'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class I) - 30.43] but found [You are overweight - 30.43]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.KnowYourBMITests@2118cddf</td></tr>
+<tr>
+<td title='testCases.KnowYourBMITests.validate_BMI_ValidData()'><b>validate_BMI_ValidData</b><br>Test class: testCases.KnowYourBMITests<br>Parameters: Centimeters (cm), 190.0, Kilograms (kg), 150.0, You are Obese(Class III) - 41.55</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class III) - 41.55] but found [You are overweight - 41.55]
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1441378585", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1441378585'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class III) - 41.55] but found [You are overweight - 41.55]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.KnowYourBMITests@2118cddf</td></tr>
+<tr>
+<td title='testCases.KnowYourBMITests.validate_BMI_ValidData()'><b>validate_BMI_ValidData</b><br>Test class: testCases.KnowYourBMITests<br>Parameters: Centimeters (cm), 190.0, Kilograms (kg), 150.0, You are Obese(Class III) - 41.55</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class III) - 41.55] but found [You are overweight - 41.55]
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1237282700", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1237282700'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class III) - 41.55] but found [You are overweight - 41.55]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.KnowYourBMITests@2118cddf</td></tr>
+<tr>
+<td title='testCases.HistoryTests.validate_refreshPage_noHistory()'><b>validate_refreshPage_noHistory</b><br>Test class: testCases.HistoryTests</td>
+<td><div><pre>java.lang.AssertionError: did not expect [No history available.] but found [No history available.]
+	at testCases.HistoryTests.validate_refreshPage_noHistory(HistoryTests.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace425963607", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace425963607'><pre>java.lang.AssertionError: did not expect [No history available.] but found [No history available.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failEquals(Assert.java:1594)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+	at org.testng.Assert.assertNotEquals(Assert.java:2217)
+	at org.testng.Assert.assertNotEquals(Assert.java:2239)
+	at testCases.HistoryTests.validate_refreshPage_noHistory(HistoryTests.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.HistoryTests@68567e20</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data1()'><b>data1</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789@gmail.net, abcdefgh, abcdefgh, "Password must be at least 8 characters long and include a number and a special character."</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1659364319", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1659364319'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.KnowYourBMITests.validate_BMI_ValidData()'><b>validate_BMI_ValidData</b><br>Test class: testCases.KnowYourBMITests<br>Parameters: Centimeters (cm), 152.0, Pounds (lb), 155.0, You are Obese(Class I) - 30.43</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class I) - 30.43] but found [You are overweight - 30.43]
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1695501686", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1695501686'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class I) - 30.43] but found [You are overweight - 30.43]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.KnowYourBMITests@2118cddf</td></tr>
+<tr>
+<td title='testCases.HistoryTests.validate_refreshPage_noHistory()'><b>validate_refreshPage_noHistory</b><br>Test class: testCases.HistoryTests</td>
+<td><div><pre>java.lang.AssertionError: did not expect [No history available.] but found [No history available.]
+	at testCases.HistoryTests.validate_refreshPage_noHistory(HistoryTests.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2090288558", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2090288558'><pre>java.lang.AssertionError: did not expect [No history available.] but found [No history available.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failEquals(Assert.java:1594)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+	at org.testng.Assert.assertNotEquals(Assert.java:2217)
+	at org.testng.Assert.assertNotEquals(Assert.java:2239)
+	at testCases.HistoryTests.validate_refreshPage_noHistory(HistoryTests.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.HistoryTests@68567e20</td></tr>
+<tr>
+<td title='testCases.SignInTests.validate_NegData_Signin()'><b>validate_NegData_Signin</b><br>Test class: testCases.SignInTests<br>Parameters: abc@gmail.com, 123.0, Password must be at least 8 characters long and include a number and a special character.</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button onclick=&quot;openModal()&quot;&gt;...&lt;/button&gt; is not clickable at point (628, 464). Other element would receive the click: &lt;button onclick=&quot;handleSignIn()&quot;&gt;...&lt;/button&gt;
+  (Session info: MicrosoftEdge=135.0.3179.85)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [cbdd4c565cdabd7c83ad6584d29f3462, clickElement {id=f.EFA4337E4622AADAFFCAA0D5A453A6AD.d.9CBF828375AB1E690538CF0AFB00C08E.e.14}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.85, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64723}, msedge: {msedgedriverVersion: 135.0.3179.85 (578105711aca..., userDataDir: C:\windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64723/devtoo..., se:cdpVersion: 135.0.3179.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (cbdd4c565cdabd7c83ad6584d29f3462)] -&gt; xpath: //button[contains(text(),&apos;Sign In / Sign Up&apos;)]]
+Session ID: cbdd4c565cdabd7c83ad6584d29f3462
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at pageObjects.HomePage.clickSignUporInButton(HomePage.java:71)
+	at testCases.SignInTests.validate_NegData_Signin(SignInTests.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace314168325", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace314168325'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button onclick=&quot;openModal()&quot;&gt;...&lt;/button&gt; is not clickable at point (628, 464). Other element would receive the click: &lt;button onclick=&quot;handleSignIn()&quot;&gt;...&lt;/button&gt;
+  (Session info: MicrosoftEdge=135.0.3179.85)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [cbdd4c565cdabd7c83ad6584d29f3462, clickElement {id=f.EFA4337E4622AADAFFCAA0D5A453A6AD.d.9CBF828375AB1E690538CF0AFB00C08E.e.14}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.85, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64723}, msedge: {msedgedriverVersion: 135.0.3179.85 (578105711aca..., userDataDir: C:\windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64723/devtoo..., se:cdpVersion: 135.0.3179.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (cbdd4c565cdabd7c83ad6584d29f3462)] -&gt; xpath: //button[contains(text(),&apos;Sign In / Sign Up&apos;)]]
+Session ID: cbdd4c565cdabd7c83ad6584d29f3462
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at pageObjects.HomePage.clickSignUporInButton(HomePage.java:71)
+	at testCases.SignInTests.validate_NegData_Signin(SignInTests.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.SignInTests@57250572</td></tr>
+<tr>
+<td title='testCases.KnowYourBMITests.validate_BMI_ValidData()'><b>validate_BMI_ValidData</b><br>Test class: testCases.KnowYourBMITests<br>Parameters: Centimeters (cm), 190.0, Kilograms (kg), 150.0, You are Obese(Class III) - 41.55</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class III) - 41.55] but found [You are overweight - 41.55]
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace147921452", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace147921452'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [You are Obese(Class III) - 41.55] but found [You are overweight - 41.55]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.KnowYourBMITests.validate_BMI_ValidData(KnowYourBMITests.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.KnowYourBMITests@2118cddf</td></tr>
+<tr>
+<td title='testCases.HistoryTests.validate_refreshPage_noHistory()'><b>validate_refreshPage_noHistory</b><br>Test class: testCases.HistoryTests</td>
+<td><div><pre>java.lang.AssertionError: did not expect [No history available.] but found [No history available.]
+	at testCases.HistoryTests.validate_refreshPage_noHistory(HistoryTests.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace396232739", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace396232739'><pre>java.lang.AssertionError: did not expect [No history available.] but found [No history available.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failEquals(Assert.java:1594)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+	at org.testng.Assert.assertNotEquals(Assert.java:2217)
+	at org.testng.Assert.assertNotEquals(Assert.java:2239)
+	at testCases.HistoryTests.validate_refreshPage_noHistory(HistoryTests.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.HistoryTests@68567e20</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data1()'><b>data1</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789@gmail.com, def12345, def12345, "Password must be at least 8 characters long and include a number and a special character."</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1547485443", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1547485443'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+<tr>
+<td title='testCases.SignUpTests.data1()'><b>data1</b><br>Test class: testCases.SignUpTests<br>Parameters: abc789@gmail.com, def, def, "Password must be at least 8 characters long and include a number and a special character."</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1421378119", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1421378119'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;],
+	expected [true] but found [false],
+	expected [Sign Up successful!] but found [&quot;Password must be at least 8 characters long and include a number and a special character.&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.SignUpTests.data1(SignUpTests.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.SignUpTests@21b2e768</td></tr>
+</table><p>
+</body>
+</html>
